@@ -1,0 +1,1380 @@
+
+
+
+
+/* Start Golbal Varuables */
+
+:root{
+--main-color: #10cab7;
+--main-color2: #f6f6f6;
+--main-color3:#e7e9ea;
+--main-color4:#2c4755;
+}
+
+/* End Global Variables */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Global rules */
+
+*{
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+
+        font-family: 'Work Sans', sans-serif;
+        color: rgb(51, 51, 51);
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+/* End Global rules */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Screen Responsive */
+
+/* Small Screens */
+@media (min-width: 768px) { 
+    
+    .container{
+        width: 750px;
+    }
+
+    
+}
+/* Medium Screens */
+@media (min-width: 992px) { 
+
+    
+    .container{
+        width: 970px;
+    }
+
+    
+}
+/* Big Screens */
+@media (min-width: 1200px) { 
+    
+        .container{
+        width: 1170px;
+    }
+}
+
+
+/* End Screen Responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Enable Dark mode */
+
+
+
+.dark3 #contact,/* To style the main topics on the website with some spicific colors*/
+.dark3 #about,
+.dark3 #services,  
+.dark3 body{
+    background-color: none;
+    background-color: #222222;
+    color: rgb(51, 51, 51);
+}
+
+
+.dark3 #features,  /* To style the main topics on the website with some spicific colors*/
+.dark3 #protfolio{
+
+    background-color: #272627;
+}
+
+
+.dark3{ /* The main colour fot the whole website*/
+    background-color: #222222;
+    color: #d9d9d9;
+}
+
+
+
+
+.dark3  #sun{   /* To style the button which is responsible for DarkMode*/
+    background-color: #272627;
+    color: #5c10ca;
+    border:#272627;
+
+
+}
+.dark3 #header{  /* To style the bar that contains the DarkMode button*/
+    background-color: #272627;
+    border:#272627;
+}
+.dark3 #icon span{  /* To style the icon on the header-bar that contains the links  */
+    background-color: #f2f2f2 ;
+    transition: all 0.3s !important;
+}
+
+.dark3 #h1{      /* To style the Header that is located on website's wallpaper*/
+    color: #272627 ;
+    text-shadow: 0px 3px 20px rgba(0,0,0,0.48);
+
+}
+.dark3 #landing-paragraph{ /* To style the <p> that's located on the website's wallpaper */
+    color: #181718 ;
+    text-shadow: 0px 3px 20px rgba(0,0,0,0.48);
+}
+
+.dark3 h3{ /* To style the <h3> */
+    color: #b1b1b1 ;
+    
+
+}
+
+.dark3 .about .content .info p{ /* To style the <p> that is located in "about" section */
+    color: #b1b1b1 !important;
+    
+
+}
+
+
+.dark3 .footer{ /* To style the footer script */
+    color: #d9d9d9 !important;
+}
+
+
+.dark3 .project .pro, /* To style the projects content that are located on the project section */
+.dark3 .project .pro .info
+{
+    background-color: #222222 !important;
+}
+
+.dark3 h2{ /* To style Every <h2> on the website*/
+    color: #2d2d2d !important;
+}
+
+
+.dark3.landing-pic{ /* To style the Main Wallpaper */
+
+    background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_One/images/landing.jpg);
+    background-size: cover;
+    /* background-image: url(images/mountain.jpg); */
+    height: calc(100vh - 64px);
+    filter: blur(1px);
+    transition: all 0.9s;
+
+    
+}
+
+
+.dark3 i{   /* To style Every icon */
+
+    color: #5c10ca !important;
+}
+
+.dark3 .social-media-icons i { /* To style specific icons, which are located on the contact section  */
+
+    color: #511a93 !important;
+}
+.dark3 .social-media-icons i:hover { /* To style specific icons, which are located on the contact section  */
+
+    color: #6a3fa0 !important;
+}
+
+
+.dark3 .Con-content a { /* To style link, which is located on the contact section  */
+
+    color: #401079 !important;
+}
+
+
+
+
+
+
+
+
+
+.dark3 .header .container .bar-content2 a{
+
+    color: #5516ae !important;
+}
+
+
+
+.header .container .bar-content2 a:hover{
+
+    color: #6a3fa0 !important;
+
+}
+
+
+
+/* End Enalbe Dark mode */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Header */
+.logoPic{
+
+    height: 24px;
+}
+
+
+
+.header{
+    padding:30px 20px;
+}
+
+
+.header .container{
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.header .container .bar-content2{
+
+    position: absolute;
+    right: 80px ;
+}
+
+
+
+
+.header .container .bar-content2 a{
+
+    text-decoration: none;
+    padding-left: 10px;
+    color: var(--main-color);
+    font-size: 17px;
+}
+
+
+
+.header .container .bar-content2 a:hover{
+
+    text-decoration: none;
+    padding-left: 10px;
+    color: #117e73;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+.fa-sun{
+    position: absolute;
+    right:  200px;
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    width: 30px;
+    /* transition: all 0.3s; */
+    background-color: white;
+    border: solid white;
+}
+
+
+
+.fa-sun:hover{
+
+    color: #00c4b0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.header .links{
+
+    display: flex;
+    position: relative;
+
+}
+
+
+
+.header .links .icon{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 30px;
+    justify-content: flex-end;
+    height: 16px;
+    
+}
+
+
+.header .links .icon span{
+    transition: all 0.3s;
+
+    margin-bottom: 5px;
+    background-color: #333;
+    height: 2px;
+
+}
+
+/* Start Desgin the link  */
+
+.header .links:hover .icon span:first-child,
+.header .links:hover .icon span:last-child{
+    width: 50%;
+}
+.header .links:hover .icon span:nth-child(2){
+
+    width: 100%;
+
+}
+
+
+
+.header .links .icon span:first-child{
+width: 100%;
+}
+
+.header .links .icon span:nth-child(2){
+width: 50%;
+}
+.header .links .icon span:last-child{
+width: 100%;
+}
+
+/* End Desgin the link  */
+
+
+
+.header .links ul {
+    list-style: none;
+
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    min-width: 200px;
+    top: calc(100% + 20px);
+    right: 0;
+    background-color: var(--main-color2);
+    display: none;
+    z-index: 3;
+
+}
+
+.header .links:hover .icon{cursor: pointer;}
+
+
+.header .links .ulBlock{
+    display: block;
+
+}
+.header .links .ulBlock1{
+    display: none;
+
+}
+.links ul::before{
+    content: "";
+    content: "";
+border-width: 10px;
+border-style: solid;
+border-color: transparent transparent var(--main-color2) transparent;
+position: absolute;
+right: 5px;
+top: -20px;
+}
+
+.header .links a{
+
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #333;
+    transition: 0.3s;
+
+}
+
+.header .links a:hover{
+    padding-left: 25px;
+}
+
+
+/* End Header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Landing */
+
+.landing{
+
+    position: relative;
+}
+
+.landing-pic{
+
+    background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_One/images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    transition: all 0.9s;
+
+}
+
+.landing .texts {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 100%;
+
+
+}
+
+
+.landing .texts h1{
+    color: var(--main-color);
+    margin: 0;
+font-weight: bold;
+font-size: 50px;
+}
+
+.landing .texts p{
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* End Landing */
+
+
+
+
+
+
+/* Start Features */
+
+.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+    
+}
+
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.features .feat{
+    padding: 30px;
+
+}
+
+.features .feat i{
+    color: var(--main-color);
+    padding: 20px;
+}
+
+
+.features .feat h3{
+font-weight: 800;
+margin: 30px 0;
+
+}
+
+.features .feat p{
+
+line-height: 1.8;
+color: #777;
+font-size: 17px;
+
+}
+
+
+/* End Features */
+
+
+
+
+
+
+
+
+
+
+/* Start Serives */
+
+                                /* Start Heading */
+
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services .container{
+
+    margin-left: auto;
+    margin-right: auto;
+
+    grid-gap: 10px;
+
+    
+
+}
+
+.services .special{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+.services .special p{
+    margin: -30px 0 0;
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+.services .special h2{
+
+
+    color: var(--main-color3);
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+
+
+}
+
+@media (max-width: 767px){
+
+    .services .special h2{
+        font-size: 60px;
+    }
+    .services .special p{
+    
+        margin-top: -20px;
+    }
+}
+
+
+
+                                /* End Heading */
+
+
+
+
+
+
+
+.services .services-content{
+
+
+    display: grid;
+    grid-template-columns: 1fr  auto;
+    grid-gap: 10px;
+}
+
+
+
+
+
+.services .services-content .col1{
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+
+}
+
+
+
+
+.services-content .col1 .col{
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+
+}
+
+
+
+.services-content .col1 .col .flex-content{
+
+    display: inline-block;
+    
+}
+
+
+
+
+.services-content .col1 .col i{
+
+    color: var(--main-color);
+    padding: 20px;
+    margin-top: 5px;
+
+}
+
+.services-content .col1 .col .flex-content h3{
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.services-content .col1 .col .flex-content p{
+
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+
+
+
+
+@media (max-width: 767px){
+
+    .services-content .col1 .col{
+
+
+        display: block;
+        text-align: center;
+        padding: 0 20px;
+
+    }
+
+    .services-content .col2 {
+
+        display: none;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.services .services-content .col2 .sec-col{
+
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* Image */
+.services .services-content .col2 .sec-col .img::before{
+
+    content: "";
+    position: absolute;
+    background-color: var(--main-color4);
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: 200px;
+    z-index: -1;
+
+
+}
+.services .services-content .col2 .sec-col .img{
+    text-align: center;
+    position: relative;
+}
+
+
+.services .services-content .col2 .sec-col .img img{
+
+
+    width: 260px;
+
+}
+
+
+
+
+@media (max-width: 1199px) {
+
+    .services .services-content .col2 .sec-col .img {
+    display: none;
+}
+}
+/* EndSerives */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Protfolio */
+
+
+
+
+                        /* Start special-heading */
+.protfolio{
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+    
+}
+
+.protfolio .container{
+    margin: 0 auto;
+    padding:0 15px;
+
+}
+
+
+.protfolio .container .special-heading{
+    text-align: center;
+    color: #ebeced;
+    }
+
+
+
+.protfolio .container .special-heading p{
+    margin: -30px 0 0;
+    margin-top: -30px;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+
+
+.protfolio .container .special-heading h2{
+
+
+    color: var(--main-color3);
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+
+@media (max-width: 757px){
+
+    .protfolio .container .special-heading h2{
+        font-size: 60px;
+    }
+    .protfolio .container .special-heading p{
+    
+        margin-top: -20px;
+    }
+}
+
+
+
+                        /* End special-heading */
+
+
+
+                        /* Start Project */
+                        
+
+.container .project{
+
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+
+.protfolio .container .project div{
+
+    background-color: white;
+
+}
+
+.container .project .pro .info{
+    padding: 0 30px;
+}
+.container .project .pro p{
+    color: #777;
+    line-height: 1.6;
+
+}
+.container .project .pro h3{
+    max-width: 100%;
+}
+
+
+.container .project .pro img{
+    max-width: 100%;
+}
+
+
+
+
+                        /* End Project */
+
+
+
+/* End Protfolio */
+
+
+
+
+
+
+
+
+
+
+/* Start About */
+                        /* Start special-heading */
+
+.about{
+    padding: 60px 0;
+}
+
+.about .container{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.about .container .special-heading {
+    text-align: center;
+
+
+}
+.about .container .special-heading h2{
+    color: var(--main-color3);
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+
+}
+
+
+.about .container .special-heading p{
+    margin: -30px 0 0;
+    margin-top: -32px;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+
+
+@media (max-width: 757px){
+
+    .about .container .special-heading h2{
+        font-size: 60px;
+
+    }
+    .about .container .special-heading p{
+        display: inline-block;
+        margin-top: -20px;
+    }
+.about .container .content .info {
+    
+        text-align: center;
+
+        flex-basis: calc(100%-500px);
+
+    }
+.about .container .content {
+    
+    flex-direction: column;
+    text-align: center;
+
+    }
+    
+
+
+}
+
+                        /* End special-heading */
+
+
+
+
+
+
+.about .container .content{
+
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.about .container .content .img{
+
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+
+.about .container .content .img img{
+
+    max-width: 100%;
+}
+
+
+.about .container .content .img::before{
+
+
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+
+}
+
+
+.about .container .content .img::after{
+
+
+    top: -40px;
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    z-index: -1;
+    right: -150px;
+}
+
+
+
+.about .container .content .info{
+
+
+    padding-top: 60px;
+    flex-basis: calc(100% - 500px);
+  
+
+}
+.about .container .content .info p:first-child{
+
+
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+
+}
+
+.about .container .content .info hr{
+    width: 50%;
+    color: var(--main-color);
+    display: inline-block;
+}
+
+.about .container .content .info p:last-child{
+
+    color: #777;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+@media (max-width: 757px){
+
+    .about .container .content .img::after{
+        
+        display: none;
+    }
+    .about .container .content .img::before{
+        
+        display: none;
+    }
+    
+    .about .container .content .img{
+    
+        
+        margin: 0 auto;
+        
+    }
+    
+
+    .about .container .content .info p:first-child{
+
+
+            margin-bottom: 50px;
+
+            text-align: center;
+            display: inline-block;
+
+
+    }
+
+    
+}
+
+
+
+/* End About */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Contact */
+
+
+/* Starting Special heading */
+.contact{
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f6f6f6;
+    padding-bottom: 100px;
+
+}
+
+
+.contact .container{
+
+    padding: 0px 15px;
+    margin: 0px auto;
+
+    display: inline-block;
+}
+
+.contact .container .special-heading h2{
+    color: var(--main-color3);
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+
+}
+
+.contact .container .special-heading p{
+
+
+    margin: -30px 0 0;
+    margin-top: -30px;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+
+@media (max-width: 757px){
+
+.contact .container .special-heading h2{
+
+    font-size: 60px;
+
+
+}
+
+.contact .container .special-heading p{
+
+    margin-top: -25px;
+
+}
+
+
+
+}
+/* Finished Special heading */
+
+
+
+
+
+
+.Con-content{
+    
+
+    margin-top: 70px;
+    position: relative;
+}
+
+.Con-content h3{
+
+    color: var(--main-color4);
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+    
+}
+
+
+
+
+.Con-content a{
+
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    left: 0px;
+    width: 100%;
+    position:absolute;   
+}
+
+
+.Con-content a:hover{
+
+    color:#5bc4b9;
+    letter-spacing: -0px;
+}
+
+
+
+@media (max-width: 757px){
+    
+    .Con-content h3, .Con-content a{
+
+    font-size: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.find-us{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+
+.find-us i{
+    color: var(--main-color4);
+    transition: all 0.3s;
+
+}
+
+.find-us i:hover{
+    color: #5b6c75;
+}
+
+.social-media-icons{
+    margin-left: 10px;
+
+}
+
+
+/* End Contact */
+
+
+
+
+
+
+
+.footer{
+
+    padding: 16px 0;
+    background-color: var(--main-color4);
+    text-align: center;
+}
+
+.footer .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .container p{
+
+
+
+    
+
+    color: white;
+    font-size: 18px;
+
+}
+.footer .container span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
