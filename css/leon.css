@@ -1369,7 +1369,48 @@ font-size: 17px;
 
 
 
+/* Start Scroll up */
 
+
+
+        @keyframes mymove{
+            100%{transform: translate(0px, -10px);
+                
+            }
+        }
+        #scrolling {
+            position: fixed;
+            right: 2%;
+            bottom: 2%;
+            height: 60px;
+            width: 60px;
+            color: #10cab7;
+            font-size: 35px;
+            animation: mymove 2s infinite;
+            z-index: 1;
+            background-color: #2d2c2d;
+            text-align: center;
+            padding-top: 12px ;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 0.4s;
+            pointer-events: none; /*Disable clicking on the link since it's there with a small opacity */
+        }
+        #scrolling:hover{
+            cursor: pointer; 
+            color: #38f8e5;
+            transition: all 0.3s;
+        }
+
+
+    #scrolling.active{
+    opacity: 1;
+    pointer-events: auto; /*Enable clicking on the link When it's active based on JS */
+
+}
+
+
+/* End Scroll up */
 
 
 
