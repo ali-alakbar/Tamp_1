@@ -69,4 +69,24 @@ button.addEventListener(
 
 
 
+// Start Scroll up
+
+const scrolling = document.getElementById("scrolling");
+const pic = document.getElementById(".pic");
+window.addEventListener("scroll",
+() => {
+    if (window.pageYOffset >= 100) {
+        scrolling.classList.add("active");
+    }
+    else{
+
+                scrolling.classList.remove("active");
+
+
+    }
+    
+});
+
+
+// End Scroll up
 
