@@ -514,7 +514,10 @@ top: -20px;
     height: calc(100vh - 64px);
     transition: all 0.9s;
 
+
 }
+
+
 
 .landing .texts {
     
@@ -823,7 +826,7 @@ font-size: 17px;
     display: none;
 }
 }
-/* EndSerives */
+/* End Serives */
 
 
 
@@ -1369,9 +1372,17 @@ font-size: 17px;
 
 
 
+
+
+
+
+
+
 /* Start Scroll up */
 
 
+
+  /* To style a button that helps to scroll up */
 
         @keyframes mymove{
             100%{transform: translate(0px, -10px);
@@ -1394,10 +1405,10 @@ font-size: 17px;
             border-radius: 50%;
             opacity: 0;
             transition: all 0.4s;
-            pointer-events: none; /*Disable clicking on the link since it's there with a small opacity */
+            pointer-events: none;
         }
         #scrolling:hover{
-            cursor: pointer; 
+            cursor: pointer;
             color: #38f8e5;
             transition: all 0.3s;
         }
@@ -1405,17 +1416,9 @@ font-size: 17px;
 
     #scrolling.active{
     opacity: 1;
-    pointer-events: auto; /*Enable clicking on the link When it's active based on JS */
+    pointer-events: auto;
 
 }
 
 
 /* End Scroll up */
-
-
-
-
-
-
-
-
