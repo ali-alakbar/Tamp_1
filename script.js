@@ -73,14 +73,15 @@ button.addEventListener(
 
 const scrolling = document.getElementById("scrolling");
 const pic = document.getElementById(".pic");
-window.addEventListener("scroll",
+
+window.addEventListener("scroll", //Adding event type 'scroll' to the window itself
 () => {
-    if (window.pageYOffset >= 100) {
-        scrolling.classList.add("active");
+    if (window.pageYOffset >= 100) { //When the window scrolling equal to or grater than 100 
+        scrolling.classList.add("active");// add this CSS class
     }
     else{
 
-                scrolling.classList.remove("active");
+        scrolling.classList.remove("active"); // Remove this CSS class
 
 
     }
