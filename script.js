@@ -28,7 +28,7 @@ links.addEventListener("click",
 
 
 
-const button = document.querySelector("button");
+const button = document.querySelector("#sun");
 const body = document.getElementById("body");
 const myh3 = document.querySelectorAll("h3");
 const myh2 = document.querySelectorAll("h2");
@@ -69,19 +69,19 @@ button.addEventListener(
 
 
 
+
 // Start Scroll up
 
 const scrolling = document.getElementById("scrolling");
 const pic = document.getElementById(".pic");
-
-window.addEventListener("scroll", //Adding event type 'scroll' to the window itself
+window.addEventListener("scroll",
 () => {
-    if (window.pageYOffset >= 100) { //When the window scrolling equal to or grater than 100 
-        scrolling.classList.add("active");// add this CSS class
+    if (window.pageYOffset >= 100) {
+        scrolling.classList.add("active");
     }
     else{
 
-        scrolling.classList.remove("active"); // Remove this CSS class
+                scrolling.classList.remove("active");
 
 
     }
@@ -90,4 +90,3 @@ window.addEventListener("scroll", //Adding event type 'scroll' to the window its
 
 
 // End Scroll up
-
